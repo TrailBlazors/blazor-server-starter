@@ -4,7 +4,7 @@
 
 Deploy a modern .NET 9 Blazor Server application in minutes with zero configuration. Perfect for building interactive web applications with C# and .NET.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/TEMPLATE_ID_HERE)
+[![Deploy on Railway](https://railway.app/button.svg)]([![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/JCYPsM?referralCode=Ce0gB7))
 
 ## ✨ Features
 
