@@ -3,12 +3,12 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 # Copy csproj and restore dependencies
-COPY blazorserverstarter/*.csproj blazorserverstarter/
-RUN dotnet restore "blazorserverstarter/BlazorServerStarter.csproj"
+COPY BlazorServerStarter/*.csproj BlazorServerStarter/
+RUN dotnet restore "BlazorServerStarter/BlazorServerStarter.csproj"
 
 # Copy everything else and build
-COPY blazorserverstarter/ blazorserverstarter/
-WORKDIR /src/blazorserverstarter
+COPY BlazorServerStarter/ BlazorServerStarter/
+WORKDIR /src/BlazorServerStarter
 RUN dotnet build "BlazorServerStarter.csproj" -c Release -o /app/build
 
 # Stage 2: Publish
