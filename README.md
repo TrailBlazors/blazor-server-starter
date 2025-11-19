@@ -1,10 +1,9 @@
 # Blazor Server Starter
-
 **A minimal, production-ready Blazor Server template optimized for Railway deployment.**
 
 Deploy a modern .NET 9 Blazor Server application in minutes with zero configuration. Perfect for building interactive web applications with C# and .NET.
 
-[![Deploy on Railway](https://railway.app/button.svg)]([![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/JCYPsM?referralCode=Ce0gB7))
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/JCYPsM?referralCode=Ce0gB7)
 
 ## ✨ Features
 
@@ -29,6 +28,7 @@ Railway automatically:
 - Generates a public URL
 
 ### Local Development
+
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/blazor-server-starter.git
@@ -41,6 +41,7 @@ dotnet run
 ```
 
 ## 📁 Project Structure
+
 ```
 blazor-server-starter/
 ├── blazorserverstarter/          # Main Blazor application
@@ -71,6 +72,7 @@ Health check endpoint at `/health` for Railway monitoring.
 ### Add New Pages
 
 Create `.razor` files in `Components/Pages/`:
+
 ```razor
 @page "/mypage"
 @rendermode InteractiveServer
@@ -85,6 +87,7 @@ Create `.razor` files in `Components/Pages/`:
 ```
 
 ### Add Database (PostgreSQL)
+
 ```bash
 cd blazorserverstarter
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
@@ -116,18 +119,3 @@ MIT License - see LICENSE file
 ---
 
 **Built for the Railway community** 🚂
-```
-
-Save and close.
-
----
-
-**Now confirm you've created all these files! Your directory should look like:**
-```
-C:\projects\Railway\blazor-server-starter\
-├── blazorserverstarter\      ← Your .NET project
-├── Dockerfile
-├── railway.toml
-├── .dockerignore
-├── .gitignore
-└── README.md
